@@ -14,7 +14,7 @@ var collection = getSession().DB("GoMovies").C("movies")
 
 // Return a connection to MongoDB
 func getSession() *mgo.Session {
-	session, err := mgo.Dial("mongodb://65.52.70.147")
+	session, err := mgo.Dial("mongodb://simpledb-mongodb.default.svc.cluster.local")
 	if err != nil {
 		panic(err)
 	}
