@@ -9,7 +9,7 @@ resources:
 - repo: self
 
 variables:
-  tag: '$(Build.BuildId)'
+  tag: 'heck909/gomovies:$(Build.BuildId)'
 
 stages:
 - stage: Build
