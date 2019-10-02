@@ -14,7 +14,7 @@ spec:
     spec: 
       containers: 
       - name: gomovies 
-        image: docker.io/heck909/gomovies:v3
+        image: docker.io/heck909/gomovies:latest
         ports: 
         - containerPort: 8080 
 --- 
