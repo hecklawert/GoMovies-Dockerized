@@ -12,7 +12,7 @@ import "gopkg.in/mgo.v2"
 // Stupid global variable
 var collection = getSession().DB("GoMovies").C("movies")
 
-// Return connection to MongoDB
+// Return  a connection to MongoDB
 func getSession() *mgo.Session {
 	session, err := mgo.Dial("mongodb://simpledb-mongodb.default.svc.cluster.local")
 	if err != nil {
