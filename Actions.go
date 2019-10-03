@@ -59,7 +59,7 @@ func newMessage(argStatus string, argMessage string) *Message {
 
 // Logic of Routes
 func Index(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "Hello from our index page v.2")
+	fmt.Fprintf(w, "Hello from our index page")
 }
 func MoviesList(w http.ResponseWriter, r *http.Request) {
 	var results []Movie
