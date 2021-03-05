@@ -31,9 +31,9 @@ jobs:
       -
         name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
-      - run: echo "VERSION=$(cat VERSION)" >> $GITHUB_ENV
       - name: Checkout code
         uses: actions/checkout@master
+      - run: echo "VERSION=$(cat VERSION)" >> $GITHUB_ENV        
       - name: Create Release
         id: create_release
         uses: actions/create-release@latest
